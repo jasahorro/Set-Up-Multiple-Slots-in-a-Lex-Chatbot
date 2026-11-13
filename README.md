@@ -18,10 +18,6 @@ In this project, I will demonstrate how to configure multiple slots with a share
 
 In this step, I will review the FollowupCheckBalance intent configuration in the Amazon Lex console because we need to verify its input and output contexts (contextCheckBalance), sample utterances, and slots (accountType and dateOfBirth) to ensure seamless conversational state carryover.
 
-### ✍️ What are we doing in this step?
-
-In this step, I will review the FollowupCheckBalance intent configuration in the Amazon Lex console because we need to verify its input and output contexts (contextCheckBalance), sample utterances, and slots (accountType and dateOfBirth) to ensure seamless conversational state carryover.
-
 ### What is Amazon Lex?
 
 Amazon Lex is a fully managed artificial intelligence service with advanced natural language models designed for building conversational interfaces into any application and it is useful because it enables developers to quickly build, test, and deploy highly engaging chatbots and virtual assistants with natural, multi-turn conversational capabilities across multiple messaging platforms without needing to manage complex underlying infrastructure.
@@ -52,13 +48,13 @@ An intent I created for my chatbot was TransferFunds, which handles moving money
 
 For this intent, I had to use the same slot type twice. This is because the TransferFunds intent requires two distinct account references (sourceAccountType and targetAccountType) to successfully process money movement between accounts, and utilizing our custom accountType slot type for both slots allows us to correctly capture and validate both the origin and destination account types.
 
-### ✍️ What are we doing in this step?
-
-In this step, I will explore Amazon Lex's built-in conversation flow and visual builder features in the AWS console because I want to analyze the chronological sequence of my TransferFunds intent, visualize how slot prompts interact, and learn how visual flowcharts can streamline building and editing complex conversational agents.
-
 I also learnt how to create confirmation prompts, which are built-in safety mechanisms in Amazon Lex that repeat transaction details (such as transferring money) back to the user for explicit verification before executing the intent fulfillment, allowing users to either confirm or cancel the action.
 
 ![Using multiple slots](https://nextwork.ai/overjoyed_magenta_proud_yak/uploads/13cfd692-9802-5c98-ada7-92fde8b30a99_97dc2351)
+
+### ✍️ What are we doing in this step?
+
+In this step, I will explore Amazon Lex's built-in conversation flow and visual builder features in the AWS console because I want to analyze the chronological sequence of my TransferFunds intent, visualize how slot prompts interact, and learn how visual flowcharts can streamline building and editing complex conversational agents.
 
 ## Exploring Lex features
 
@@ -66,11 +62,11 @@ Lex also has a special conversation flow feature that displays every step of an 
 
 You could also set up your intent using a visual builder! A visual builder transforms the standard text-based setup page into an interactive flowchart, allowing you to easily visualize, design, and manage your bot's conversational paths and slot prompts visually!
 
+![Exploring Lex features](https://nextwork.ai/overjoyed_magenta_proud_yak/uploads/13cfd692-9802-5c98-ada7-92fde8b30a99_12345678)
+
 ### ✍️ What are we doing in this step?
 
-In this step, I will use AWS CloudFormation to deploy the BankerBot stack from the provided nextwork-banker-bot.yaml template because automating our infrastructure setup with Infrastructure as Code (IaC) saves time and ensures all Lex bots, intents, and Lambda resources are consistently and correctly configured in seconds!
-
-![Exploring Lex features](https://nextwork.ai/overjoyed_magenta_proud_yak/uploads/13cfd692-9802-5c98-ada7-92fde8b30a99_12345678)
+In this step, I will use AWS CloudFormation to deploy the BankerBot stack from the provided [nextwork-banker-bot.yaml](project-files/nextwork-banker-bot.yaml) template because automating our infrastructure setup with Infrastructure as Code (IaC) saves time and ensures all Lex bots, intents, and Lambda resources are consistently and correctly configured in seconds!
 
 ## AWS CloudFormation
 
